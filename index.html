@@ -29,6 +29,7 @@
       playlistDone = false,
       playBumper = true,
       firstTime = true,
+      // +++ Assign to array the bumper "ads" +++
       bumperData = ["4446983083001", "4446941103001", "4446983090001", "4447058684001", "4446941108001", "4446983094001"],
       bumperDataLength = bumperData.length;
 
@@ -47,7 +48,8 @@
           }
         }
       });
-      // play first bumper
+
+      // +++ Play first bumper +++
       playRandomBumper();
       playBumper = false;
     });
