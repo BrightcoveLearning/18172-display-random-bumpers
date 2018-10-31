@@ -8,20 +8,20 @@
 
 <body>
 
-  <video id="myPlayerID"
+  <video-js id="myPlayerID"
     data-account="1752604059001"
     style='width: 640px;height: 360px;'
     data-player="BJewzaEuWM"
     data-embed="default"
     data-application-id
     class="video-js"
-    controls></video>
-  <script src="//players.brightcove.net/1752604059001/BJewzaEuWM_default/index.min.js"></script>
+    controls></video-js>
+  <script src="https://players.brightcove.net/1752604059001/BJewzaEuWM_default/index.min.js"></script>
 
   <script src="display-bumpers.js"></script>
 
   <script type="text/javascript">
-  videojs('myPlayerID').ready(function(){
+  videojs.getPlayer('myPlayerID').ready(function() {
     var myPlayer = this;
     myPlayer.displayBumpers();
   });
